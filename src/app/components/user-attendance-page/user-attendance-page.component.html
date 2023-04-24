@@ -63,7 +63,7 @@
           </thead>
           <tbody>
 
-            <tr *ngFor="let log of filteredLogs">
+            <tr *ngFor="let log of filteredLogs | paginate: { itemsPerPage: itemsPerPage, currentPage: currentPage};">
               <td><img style="height:100px;width:100px;" [src]="imageBaseUrl+log.imageName" alt=""></td>
               <td>{{ log.timeLog }}</td>
               <td>{{ log.attendanceLogTypeName }}</td>
@@ -71,6 +71,7 @@
               <td>{{ log.attendanceLogStatusName }}</td>
             </tr>
           </tbody>
+          <pagination-controls (pageChange)="currentPage = $event"></pagination-controls>
         </table>
       </div>
     </div>

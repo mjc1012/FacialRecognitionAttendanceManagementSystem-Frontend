@@ -16,6 +16,8 @@ import { environment } from 'src/environments/environment';
 export class AttendancePageComponent implements OnInit {
   public logs: AttendanceLog[] = [];
   public filteredLogs: AttendanceLog[] = [];
+  public currentPage = 1; // current page number
+  public itemsPerPage = 10; // number of items to display per page
   public editLog: AttendanceLog = {
   }
 

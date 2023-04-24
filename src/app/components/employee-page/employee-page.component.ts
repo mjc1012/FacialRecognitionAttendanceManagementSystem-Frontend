@@ -41,6 +41,9 @@ export class EmployeePageComponent implements OnInit {
   employeeLoggedIn: Employee = { };
   public employeeId: string = "";
 
+  public currentPage = 1; // current page number
+  public itemsPerPage = 10; // number of items to display per page
+
   public userLogs: AttendanceLog[] = [];
   public deleteEmployee: Employee = {}
   imageBaseUrl=environment.AttendaceManagementSystemAPIBaseUrl+'profilepictures/';

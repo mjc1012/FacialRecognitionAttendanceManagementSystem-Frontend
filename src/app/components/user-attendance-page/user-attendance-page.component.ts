@@ -17,6 +17,10 @@ export class UserAttendancePageComponent {
   public employeeId: string = "";
   public filteredLogs: AttendanceLog[] = [];
   public logs: AttendanceLog[] = [];
+
+  public currentPage = 1; // current page number
+  public itemsPerPage = 10; // number of items to display per page
+
   public editLog: AttendanceLog = {
     timeLog: 'string',
     attendanceLogTypeName: 'string',

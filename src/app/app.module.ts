@@ -20,6 +20,7 @@ import { ResetPasswordPageComponent } from './components/reset-password-page/res
 import { UserAttendancePageComponent } from './components/user-attendance-page/user-attendance-page.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { LoadingInterceptor } from './interceptors/loading.interceptor';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { LoadingInterceptor } from './interceptors/loading.interceptor';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    NgxPaginationModule,
     ToastrModule.forRoot({
       timeOut: 5000,
       closeButton: true,
