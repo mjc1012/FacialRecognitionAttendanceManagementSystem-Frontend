@@ -1,0 +1,18 @@
+.scrollable-widget {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  /* align-items: flex-end; */
+}
+
+.scrollable-widget > div {
+  width: 200%;
+}
+
+.scrollable-widget img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  margin-right: 1rem; /* Add some margin between the images */
+}
