@@ -9,3 +9,6 @@ To run this project please follow the steps below:
 3. Make sure the values for FaceRecognitionAPIBaseUrl and AttendaceManagementSystemAPIBaseUrl in environment.ts file are the same with the URLs of ATTENDANCE MANAGEMENT SYSTEM API and FACE RECOGNITION API
 4. Make sure both ATTENDANCE MANAGEMENT SYSTEM API and FACE RECOGNITION API are running
 4. Type 'ng serve' in the terminal to run the application
+6. Default Account has the following credentials:
+Id Number: ADMIN
+Password: ADMIN
